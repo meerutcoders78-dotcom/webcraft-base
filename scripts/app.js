@@ -1,3 +1,6 @@
+let count = 0;
+
 document.getElementById("btn").addEventListener("click", () => {
-  alert("Thanks for checking out this open source project!");
+  count++;
+  document.getElementById("count").textContent = `Clicks: ${count}`;
 });
